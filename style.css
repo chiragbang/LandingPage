@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background: linear-gradient(90deg , #adefd1ff 50% , #00203fff 50% );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    background-color: azure;
+    height: 90vh;
+    width: 90%;
+}
+
+.navbar .logo .logoimg{
+    width: 100%;
+    height: 15vh;
+}
+
+.navbar{
+    
+    
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+}
+
+.navbar , .navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlist li{
+    list-style: none;
+    padding: 20px;
+}
+
+.navlist a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+}
+
+.navlist a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: .2s ease-in-out;
+}
+
+.navlist a:hover::before{
+    width: 100%;
+ }
+
+ .hero{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+ }
+
+ .hero .productimg{
+    width: 45vw;
+    height: 62vh;
+ }
+
+ .content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 4px solid #00203fff;
+    padding: 20px 50px;
+ }
+
+ .content h3{
+    color: rgb(237, 219, 20);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+ }
+
+ .content h1{
+    color: #00203fff;
+    font-size: 50px;
+ }
+
+ .content p{
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+ }
+
+
+.button-73 {
+  appearance: none;
+  background-color: #adefd1ff;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow:#00203fff  0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
